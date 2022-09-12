@@ -1,0 +1,10 @@
+curl -X POST -H "Content-Type: application/json" --data @/home/ubuntu/kafka/kafka-mqtt-connectors/mqtt-source-basic-feature.json http://localhost:8083/connectors  | jq
+
+
+curl -X GET http://localhost:8083/connectors | jq
+curl -X GET http://localhost:8083/connectors/mqtt-source-basic-feature/status | jq
+curl -X GET http://localhost:8083/connectors/mqtt-source-spectral-feature/status | jq
+curl -X GET http://localhost:8083/connectors/mqtt-source-advanced-feature-ts/status | jq
+curl -X GET http://localhost:8083/connectors/mqtt-source-iu-error/status | jq
+curl -X GET http://localhost:8083/connectors/mqtt-source-config_confirm/status | jq
+curl -X GET http://localhost:8083/connectors/mqtt-source-diagnostic-ts/status | jq
